@@ -13,7 +13,13 @@ class PacienteController extends Controller
      */
     public function index()
     {
-        return view('/paciente');
+        $obj = [
+            ["nome"=>"Simone", "telefone"=>987404766],
+            ["nome"=>"Vitor", "telefone"=>123456789]
+        ];
+        //dd($obj);
+
+        return view('paciente', ['obj_paciente'=> $obj]);
     }
 
     /**
