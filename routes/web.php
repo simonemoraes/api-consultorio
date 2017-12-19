@@ -15,5 +15,4 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/paciente', 'PacienteController@index')->name('paciente');
+
