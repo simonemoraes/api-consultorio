@@ -11,4 +11,6 @@ class PacienteModel extends Model
         'email',
         'tefone'
     ];
+
+    
 }
