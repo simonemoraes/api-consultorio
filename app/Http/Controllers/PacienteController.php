@@ -11,18 +11,13 @@ class PacienteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(){
+        
+        $paciente = new PacienteModel();
 
-
-    {
-        $nome = array(
-            
-            ['name'=>'simone'],
-            ['telefone'=>'987404766']
-        );
         //dd($nome);
 
-        return view('paciente')->with(Input::all(), $nome);
+        return view('paciente')->with($nome);
     }
 
     /**
