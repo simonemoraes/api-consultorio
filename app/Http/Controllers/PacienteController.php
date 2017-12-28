@@ -17,7 +17,7 @@ class PacienteController extends Controller
 
         //dd($nome);
 
-        return view('paciente')->with($nome);
+        return view('paciente');
     }
 
     /**
